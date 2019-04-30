@@ -1,0 +1,141 @@
+body{
+  text-align: center;
+}
+
+/* PARA LUCAS
+.redes{
+  border: solid;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+} */
+
+.jumbotron{
+  background-image: url('../img/tokystok02.png');
+  /* background-color: rgb(199,160,77); /*Ocre*/
+  background-size: cover;
+  border-radius: 50px;
+}
+.jumbotron h1{
+  font-size: 48px;
+}
+.jumbotron .lead{
+  color: white;
+}
+.jumbotron h2{
+  font-size: 30px;
+  text-decoration: underline;
+}
+.productos{
+  background-color: rgba(145, 136, 119, 0.6); /*Gris*/
+  display: none;
+  height: auto;
+  border-radius: 5px;
+  color: white;
+  padding: 30px;
+}
+.productos img{
+  width: 90%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: white;
+}
+.productos p{
+  line-height: 10px;
+}
+.productos .ver-mas{
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+.promociones{
+  background-color: rgba(145, 136, 119, 0.6); /*Gris*/
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  padding-top: 10px;
+  color: white;
+}
+.promociones a{
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+.estrella{
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+.opciones{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.opciones a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.opciones a:hover{
+  color: rgb(199,160,77); /*Ocre*/
+}
+.opciones p{
+  font-size: 15px;
+}
+
+/* Tablet */
+@media (min-width:768px){
+  .jumbotron{
+    height: 510px;
+  }
+  .jumbotron h2{
+    font-size: 16px;
+  }
+  .jumbotron p{
+    font-size: 11px;
+  }
+  .jumbotron .lead{
+    font-size: 14px;
+  }
+  .productos{
+    display: block;
+    padding: 10px;
+  }
+  .productos a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+  }
+  .promociones{
+    height: 150px;
+    padding: 10px;
+  }
+  .promociones a{
+    display: none;
+  }
+}
+
+/* Desktop */
+@media (min-width:1024px){
+  .jumbotron h2{
+    font-size: 20px;
+  }
+  .jumbotron p{
+    font-size: 16px;
+  }
+  .jumbotron .dark-deco{
+    font-size: 6em;
+  }
+  .jumbotron .lead{
+    color: black;
+  }
+  .jumbotron .container{
+    color: black;
+  }
+  .productos{
+    display: block;
+  }
+}

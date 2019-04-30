@@ -1,0 +1,62 @@
+body{
+}
+.accordion{
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.card{
+  padding: 0;
+}
+.card-header{
+  background-color: gray;
+  font-size: 10px;
+  color: white;
+  text-align: justify;
+}
+.card-header:hover{
+  color: rgb(199,160,77);
+  cursor: pointer;
+}
+.collapse{
+  margin-left: 30px;
+  margin-right: 10px;
+  font-size: 10px;
+  text-align: justify;
+}
+.estrella{
+  color : rgb(199,160,77); /*Ocre*/
+  font-size: 15px;
+}
+
+/* Tablet */
+@media (min-width:768px){
+  .estrella{
+    font-size: 25px;
+  }
+  .card-header{
+    font-size: 16px;
+  }
+  .collapse{
+    margin-left: 40px;
+    font-size: 12px;
+  }
+}
+
+/* Desktop */
+@media (min-width:1024px){
+  .estrella{
+    font-size: 30px;
+  }
+  .accordion{
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .card-header{
+    font-size: 18px;
+  }
+  .collapse{
+    margin-left: 50px;
+    font-size: 16px;
+  }
+}

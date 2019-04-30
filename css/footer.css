@@ -1,0 +1,39 @@
+#footer {
+    background: #1E1B2C; !important;
+    padding: 60px 0;
+}
+#footer h5{
+	 padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.links li a i{
+	margin-right: 5px;
+}
+#footer ul.links li:hover a i {
+    font-weight: 700;
+}
+#footer p.letraChica{
+  font-size: 8px;
+}
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}

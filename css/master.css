@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+  background-color: #F3F3F3;
+}
+
+.formulario input{
+  display: block;
+}
+
+.formulario input[type=checkbox]{
+  display: inline;
+}
+
+/*COLUMNAS */
+/*
+.A{
+  background-color: red;
+}
+
+.B{
+  background-color: blue;
+}
+*/
+
+.social-iconos {
+  display: inline-block;
+  color: #FFFFFF;
+}
+
+.social-iconos a:hover {
+  cursor: pointer;
+}
+.social-iconos .fab{
+  top: -25%;
+}

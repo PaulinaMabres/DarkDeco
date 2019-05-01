@@ -1,7 +1,6 @@
 body{
   text-align: center;
 }
-
 /* PARA LUCAS
 .redes{
   border: solid;
@@ -12,7 +11,16 @@ body{
   font-size: 20px;
   color: black;
 } */
-
+.headerEspacio{
+  padding-top: 61px !important;
+}
+.box-max{
+  max-height: 47em;
+  max-width: 30em;
+}
+.img-max{
+  max-height: 47em;
+}
 .jumbotron{
   background-image: url('../img/tokystok02.png');
   /* background-color: rgb(199,160,77); /*Ocre*/

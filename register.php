@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Registro</title>
    <!--Made with love by Mutiullah Samim -->
 
@@ -23,7 +24,7 @@
 		include('partials/header.php');
 	?>
 
-	<div class="d-flex justify-content-center h-100">
+	<div class="d-flex justify-content-center h-100 headerEspacio">
 		<div class="card">
 			<div class="card-header">
 				<h4>Registro</h4>

@@ -3,12 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Registro</title>   
+	<title>Registro</title>
  	<?php include('partials/headmaster.php'); ?>
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="css/login.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
 </head>
 <body>
 

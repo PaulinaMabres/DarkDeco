@@ -65,3 +65,4 @@
     </div>
   </section>
 </footer>
+<?php  include('partials/jqweryscripts.php');  ?>

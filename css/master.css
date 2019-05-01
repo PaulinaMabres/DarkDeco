@@ -38,3 +38,30 @@ body{
 .social-iconos .fab{
   top: -25%;
 }
+
+
+/* Tablet */
+@media (min-width:768px){
+  .jumbotron{
+    height: 510px;
+  }
+  .jumbotron h2{
+    font-size: 16px;
+  }
+  .jumbotron p{
+    font-size: 11px;
+  }
+  .jumbotron .lead{
+    font-size: 14px;
+  }
+}
+
+/* Desktop */
+@media (min-width:1024px){
+  .jumbotron h2{
+    font-size: 20px;
+  }
+  .jumbotron p{
+    font-size: 16px;
+  }
+}

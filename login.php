@@ -6,16 +6,15 @@
 	<title>Iniciar Sesión</title>
    <!--Made with love by Mutiullah Samim -->
 
-	<!--Bootsrap 4 CDN-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <!--Fontawesome CDN-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+	 <?php
+   include('partials/headmaster.php');
+   ?>
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="css/login.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
+
+
+
+	<!-- <link rel="stylesheet" href="css/home.css"> -->
 </head>
 <body>
 
@@ -25,7 +24,8 @@
 		include('partials/header.php');
 	?>
 
-	<div class="d-flex justify-content-center h-100">
+
+	<div class="d-flex justify-content-center h-100 tablet">
 		<div class="card">
 			<div class="card-header">
 				<h4>Iniciar Sesión</h4>

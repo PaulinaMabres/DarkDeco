@@ -18,10 +18,12 @@
 	<div class="d-flex justify-content-center h-100 headerEspacio">
 		<div class="card">
 			<div class="card-header">
-				<h4>Registro</h4>
+				<h1>Registro</h1>
 			</div>
 			<div class="imagen" >
-			 <img src="img/logoNuevo.png" alt="logo" width="100px" height="100px">
+				<a href="/DarkDeco">
+					<img src="img/logoNuevo.png" alt="logo" width="100px" height="100px">
+				</a>
 			</div>
 			<div class="card-body">
 				<form>

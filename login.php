@@ -28,9 +28,11 @@
 	<div class="d-flex justify-content-center h-100 tablet">
 		<div class="card">
 			<div class="card-header">
-				<h4>Iniciar Sesión</h4>
+				<h1>Iniciar Sesión</h1>
 				 <div class="imagen" >
-				 	<img src="img/logoNuevo.png" alt="logo" width="100px" height="100px">
+					 <a href="/DarkDeco">
+						 <img src="img/logoNuevo.png" alt="logo" width="100px" height="100px">
+					 </a>
 				 </div>
 
 			</div>

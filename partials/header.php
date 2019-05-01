@@ -1,9 +1,9 @@
-<section id="header">
+<section id="header" class="header">
 
-  <nav class="navbar navbar-expand-sm  navbar-dark bg-dark container-fluid color fixed-top">
+  <nav class="navbar navbar-expand-sm  navbar-dark bg-dark container-fluid color fixed-top altura ">
 
-    <a class="navbar-brand" href="#">
-      <img src="../img/logoNuevoRecortado.png" title="DarkDeco" width="80" height="80" class="d-inline-block align-top" alt="logoDarkD">
+    <a class="navbar-brand mt-15 " href="home.php">
+      <img src="img/logoNuevoRecortado.png" title="DarkDeco" class="d-inline-block align-top logo" alt="logoDarkD">
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,11 +13,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <div class="navbar-nav mr-auto ml-auto text-center">
-        <a class="nav-item nav-link active h4 ml-3" href="#">Home</a>
+        <a class="nav-item nav-link active h4 ml-3" href="home.php">Home</a>
 
         <!-- IDEA: Categorias -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle h4 ml-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle h4 ml-3 p-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Categorías
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -28,7 +28,7 @@
           </div>
         </li>
 
-        <a class="nav-item nav-link h4 ml-3" href="#">FAQ</a>
+        <a class="nav-item nav-link h4 ml-3" href="faq.php">FAQ</a>
         <a class="nav-item nav-link h4 ml-3" href="#"> Extra </a>
       </div>
 
@@ -42,7 +42,7 @@
 
           <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="login.php"><button class="btn btn-outline-success" type="submit">Log in</button></a>
-            <a class="dropdown-item" href="register.php"><button class="btn btn-sm btn-outline-secondary" type="submit">No tenes cuenta? Registrate!</button></a>
+            <a class="dropdown-item" href="registro.php"><button class="btn btn-sm btn-outline-secondary" type="submit">No tenes cuenta? Registrate!</button></a>
 
           </div>
         </li>

@@ -18,6 +18,7 @@
     <!-- Contenido de FAQ -->
     <?php
     include('partials/arrayFAQs.php');
+    // var_dump($preguntasFrecuentes);
     ?>
 
     <!-- <div class="preguntas row"> -->

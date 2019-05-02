@@ -12,7 +12,16 @@ body{
   font-size: 20px;
   color: black;
 } */
-
+.headerEspacio{
+  padding-top: 61px !important;
+}
+.box-max{
+  max-height: 47em;
+  max-width: 30em;
+}
+.img-max{
+  max-height: 47em;
+}
 .jumbotron{
   background-image: url('../img/tokystok02.png');
   /* background-color: rgb(199,160,77); /*Ocre*/
@@ -85,11 +94,14 @@ body{
 .opciones p{
   font-size: 15px;
 }
-
+.estrella-op{
+  /* color: rgb(156, 145, 82); /*Verde*/
+  color: rgb(23, 90, 108); /*Azul*/
+}
 /* Tablet */
 @media (min-width:768px){
   .jumbotron{
-    height: 510px;
+    height: 80%px;
   }
   .jumbotron h2{
     font-size: 16px;

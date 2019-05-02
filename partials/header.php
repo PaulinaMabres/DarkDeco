@@ -42,7 +42,7 @@
 
           <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="login.php"><button class="btn btn-outline-success" type="submit">Log in</button></a>
-            <a class="dropdown-item" href="registro.php"><button class="btn btn-sm btn-outline-secondary" type="submit">No tenes cuenta? Registrate!</button></a>
+            <a class="dropdown-item" href="register.php"><button class="btn btn-sm btn-outline-secondary" type="submit">No tenes cuenta? Registrate!</button></a>
 
           </div>
         </li>

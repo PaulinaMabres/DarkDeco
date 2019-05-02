@@ -7,7 +7,7 @@
           <div class="col-xs-12 col-sm-4 col-md-3 offset-md-2"><h5>Navegación</h5>
             <ul class="list-unstyled links ">
               <li><a href="home.php"><i class="fa fa-angle-double-right"></i>Home</a></li>
-              <li><a href="registro.php"><i class="fa fa-angle-double-right"></i>Register</a></li>
+              <li><a href="register.php"><i class="fa fa-angle-double-right"></i>Register</a></li>
               <li><a href="faq.php"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
               <li><a href="login.php"><i class="fa fa-angle-double-right"></i>Log In</a></li>
               <li><a href="#"><i class="fa fa-angle-double-right"></i>Extra link</a></li>

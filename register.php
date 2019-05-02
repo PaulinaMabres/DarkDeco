@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container registro">
 	<?php
 		include('partials/header.php');
 	?>
@@ -27,6 +27,21 @@
 			</div>
 			<div class="card-body">
 				<form>
+					<div class="form-group social_login">
+						<a class="btn btn-block btn-social btn-twitter">
+								<span class="fab fa-twitter"></span> Registrate con Twitter
+						</a>
+						<a class="btn btn-block btn-social btn-facebook">
+								<span class="fab fa-facebook"></span> Registrate con Facebook
+						</a>
+						<a class="btn btn-block btn-social btn-google">
+								<span class="fab fa-google"></span> Registrate con Google
+						</a>
+						<div class = "space">
+								O
+						</div>
+					</div>
+
 					<div class="form-group">
 		        <div class="input-group mb-3">
 		          <input type="text" class="form-control" placeholder="tu nombre" aria-label="tu nombre" aria-describedby="basic-addon1">

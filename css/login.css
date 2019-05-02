@@ -16,12 +16,33 @@ align-content: center;
 }
 
 .card{
-height: 370px;
+height: 320px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
 background-color: rgba(0,0,0,0.5) !important;
+font-size: 1.5rem;
 }
+.card .btn,
+.card .input-group-text,
+.card .form-control
+{
+  font-size: 1.5rem;
+}
+
+.card a {
+    color: #55a4fb;
+    text-decoration: none;
+}
+.card a:hover{
+  color: #55a4fb;
+  text-decoration: underline;
+}
+.card a:visited{
+  color: #55a4fb;
+  text-decoration: none;
+}
+
 
 .social_icon span{
 font-size: 60px;
@@ -34,7 +55,7 @@ color: white;
 cursor: pointer;
 }
 
-.card-header h4{
+.card-header h1{
 color: white;
 }
 
@@ -102,4 +123,60 @@ margin-left: 4px;
 
 .headerEspacio{
   padding-top: 61px!important;
+}
+.container.registro .headerEspacio{
+  padding-top: 81px!important;
+}
+.container.registro .card{
+  height: auto;
+}
+.container.login .social_login a,
+.container.registro .social_login a{
+  background: #FFD728;
+}
+.container.login .space,
+.container.registro .space {
+  color: white;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.container.login .social_login{
+  display: none;
+}
+/*Celular*/
+@media (max-width:575px){
+  .card .tablet{
+    visibility: visible;
+  }
+  .card .imagen{
+      display: none;
+  }
+  .login_btn {
+    width: 46%;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .card {
+    margin: 1em 0 1em 0;
+    height: auto;
+  }
+
+  .container.login .social_icon{
+    display: none !important;
+  }
+  .container.login .social_login{
+    display: block;
+  }
+
+
+}
+
+@media (min-width:1024px){
+  .login .tablet{
+    visibility: hidden;
+  }
 }

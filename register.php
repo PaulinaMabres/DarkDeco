@@ -3,16 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Registro</title>   
+	<title>Registro</title>
  	<?php include('partials/headmaster.php'); ?>
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="css/login.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
 </head>
 <body>
 
-<div class="container">
+<div class="container registro">
 	<?php
 		include('partials/header.php');
 	?>
@@ -20,13 +18,30 @@
 	<div class="d-flex justify-content-center h-100 headerEspacio">
 		<div class="card">
 			<div class="card-header">
-				<h4>Registro</h4>
+				<h1>Registro</h1>
 			</div>
 			<div class="imagen" >
-			 <img src="img/logoNuevo.png" alt="logo" width="100px" height="100px">
+				<a href="/DarkDeco">
+					<img src="img/logoNuevo.png" alt="logo" width="100px" height="100px">
+				</a>
 			</div>
 			<div class="card-body">
 				<form>
+					<div class="form-group social_login">
+						<a class="btn btn-block btn-social btn-twitter">
+								<span class="fab fa-twitter"></span> Registrate con Twitter
+						</a>
+						<a class="btn btn-block btn-social btn-facebook">
+								<span class="fab fa-facebook"></span> Registrate con Facebook
+						</a>
+						<a class="btn btn-block btn-social btn-google">
+								<span class="fab fa-google"></span> Registrate con Google
+						</a>
+						<div class = "space">
+								O
+						</div>
+					</div>
+
 					<div class="form-group">
 		        <div class="input-group mb-3">
 		          <input type="text" class="form-control" placeholder="tu nombre" aria-label="tu nombre" aria-describedby="basic-addon1">

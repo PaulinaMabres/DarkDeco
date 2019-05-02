@@ -21,7 +21,7 @@
 				<h1>Registro</h1>
 			</div>
 			<div class="imagen" >
-				<a href="/DarkDeco">
+				<a href="home.php">
 					<img src="img/logoNuevo.png" alt="logo" width="100px" height="100px">
 				</a>
 			</div>

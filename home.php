@@ -10,20 +10,22 @@
   <title>Dark Déco</title>
 </head>
 <body>
-  <div class="container-fluid">
+  <header>
+
+
     <?php
     include('partials/header.php');
     ?>
-
+</header>
     <!-- Contenido del Home -->
-
+<div class="container-fluid headerEspacio">
     <div class="jumbotron jumbotron-fluid row">
       <!-- <div class="main row"> -->
-        <div class="productos col-12 col-md-3">
+        <div class="productos col-12 col-md-3 box-max">      <!-- IDEA: *Lucas* agrego box-max porque se superpone con algo de abajo -->
           <i class="estrella fas fa-star"></i>
           <!-- <h3 class="estrella">&#9733;</h3> -->
           <h2>Promo del mes</h2>
-          <img src="img/sillaEamesNegrax2.jpg" alt="Silla Eames 2x1">
+          <img class="img-max" src="img/sillaEamesNegrax2.jpg" alt="Silla Eames 2x1"> <!-- IDEA: *Lucas* agrego img-max porque se superpone con algo de abajo -->
           <p>Silla Eames</p>
           <p>Llevás 2 y pagás 1</p>
           <br>
@@ -69,12 +71,12 @@
     <button type="button" class="btn"><i class="redes fab fa-linkedin-in"></i></button>
     <button type="button" class="btn"><i class="redes fab fa-dribbble"></i></button> -->
 
+    </div>
     <?php
     // FOOTER
     include('partials/footer.php');
 
     ?>
-  </div>
 
   <?php
   // jqwery scripts

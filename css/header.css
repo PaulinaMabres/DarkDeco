@@ -1,0 +1,21 @@
+#header .color {
+    background: #1E1B2C !important;
+  }
+.header {
+  background-size: auto;
+}
+ #header .mt-15{
+  margin-top: -15px;
+}
+#header .logo{
+  width: 60px;
+  height: 60px;
+}
+@media screen and (max-width:575px) {
+  #header .mt-15{
+    margin-top: 3px
+  }
+  #header .logo{
+    margin-top: -8px;
+  }
+}

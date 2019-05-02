@@ -16,18 +16,17 @@
     ?>
   </header>
 
+  <!-- Contenido de FAQ -->
   <div class="container-fluid">
-    <!-- Contenido de FAQ -->
+
     <?php
     include('partials/arrayFAQs.php');
     // var_dump($preguntasFrecuentes);
     ?>
 
-    <!-- <div class="preguntas row"> -->
     <div class="accordion row" id="accordionExample">
       <?php
       // Recorro el array generando tarjetas con las preguntas y respuestas
-
       for ($i=0; $i < count($preguntasFrecuentes); $i++) {
         ?>
 
@@ -52,14 +51,17 @@
       }
       ?>
     </div>
-    <?php
-    // FOOTER
-    include('partials/footer.php');
-    ?>
   </div>
+
+  <?php
+  // FOOTER
+  include('partials/footer.php');
+  ?>
+
   <?php
   // jqwery scripts
   include('partials/jqweryscripts.php');
   ?>
+
 </body>
 </html>

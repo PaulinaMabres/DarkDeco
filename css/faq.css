@@ -14,7 +14,8 @@ body{
   text-align: justify;
 }
 .card-header:hover{
-  color: rgb(199,160,77);
+  /*color: rgb(199,160,77); /*Ocre*/
+  color: rgb(23, 90, 108); /*Azul*/
   cursor: pointer;
 }
 .collapse{
@@ -23,9 +24,10 @@ body{
   font-size: 10px;
   text-align: justify;
 }
-.estrella{
+.icono-preguntas{
   color : rgb(199,160,77); /*Ocre*/
-  font-size: 15px;
+  /* color: rgb(23, 90, 108); /*Azul*/
+  font-size: 24px;
 }
 
 /* Tablet */

@@ -10,11 +10,13 @@
   <title>Dark Déco</title>
 </head>
 <body>
-  <div class="container-fluid">
+  <header>
     <?php
     include('partials/header.php');
     ?>
+  </header>
 
+  <div class="container-fluid">
     <!-- Contenido de FAQ -->
     <?php
     include('partials/arrayFAQs.php');
@@ -31,9 +33,8 @@
 
         <div class="card col-12">
           <div class="card-header" id="heading<?php echo $i; ?>"class="mb-0" data-toggle="collapse" data-target="#collapse<?php echo $i; ?>" aria-expanded="false" aria-controls="collapse<?php echo $i; ?>">
-            <!-- <i class="fas fa-plus-circle"></i> -->
-            <!-- <i class="fas fa-share-alt-square"></i> -->
-            <i class="estrella fas fa-star"></i>
+            <!-- <i class="estrella fas fa-star"></i> -->
+            <i class="icono-preguntas fas fa-home"></i>
             <?php
             echo $preguntasFrecuentes[$i]["pregunta"];
             ?>

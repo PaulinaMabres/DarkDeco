@@ -102,6 +102,10 @@
 	include('partials/footer.php');
 ?>
 
+<?php
+// jqwery scripts
+include('partials/jqweryscripts.php');
+?>
 
 </body>
 </html>

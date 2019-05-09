@@ -76,9 +76,18 @@ border:0 !important;
 
 input:focus{
 outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
+box-shadow: inset 10em 10em gold !important;
 
 }
+
+.file-input::-webkit-file-upload-button{
+  visibility: hidden;
+}
+
+.file-input::before {
+  content: 'tu foto';
+}
+
 
 .remember{
 color: white;
@@ -173,6 +182,11 @@ margin-left: 4px;
   }
 
 
+}
+
+.form-group p {
+  color:white;
+  margin-left: 10px;
 }
 
 @media (min-width:1024px){

@@ -1,3 +1,7 @@
+<?php
+include("partials/val_register.php");
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +30,7 @@
 				</a>
 			</div>
 			<div class="card-body">
-				<form>
+				<form class="" action="register.php" method="post" enctype="multipart/form-data">
 					<div class="form-group social_login">
 						<a class="btn btn-block btn-social btn-twitter">
 								<span class="fab fa-twitter"></span> Registrate con Twitter
@@ -44,27 +48,48 @@
 
 					<div class="form-group">
 		        <div class="input-group mb-3">
-		          <input type="text" class="form-control" placeholder="tu nombre" aria-label="tu nombre" aria-describedby="basic-addon1">
+		          <input type="text" class="form-control" name="nombre" placeholder="tu nombre" aria-label="tu nombre" aria-describedby="basic-addon1" value="<?= $nombre?>">
+							<p><?= $errorNombre ?></p>
 		        </div>
 		      </div>
 		      <div class="form-group">
-		          <input type="text" class="form-control" placeholder="tu apellido" aria-label="tu apellido" aria-describedby="basic-addon1">
+						<div class="input-group mb-3">
+		          <input type="text" class="form-control" name="apellido" placeholder="tu apellido" aria-label="tu apellido" aria-describedby="basic-addon1" value="<?= $apellido?>">
+							<p><?= $errorApellido ?></p>
+						</div>
 		      </div>
 		      <div class="form-group">
-		          <input type="email" class="form-control" placeholder="tu email" aria-label="tu email" aria-describedby="basic-addon1">
+						<div class="input-group mb-3">
+		          <input type="email" class="form-control" name="email" placeholder="tu email" aria-label="tu email" aria-describedby="basic-addon1" value="<?= $email?>">
+							<p><?= $errorEmail ?></p>
+						</div>
+		      </div>
+					<div class="form-group">
+						<div class="input-group mb-3">
+		          <input type="file" class="form-control file-input" name="foto" placeholder="tu foto de perfil" aria-label="tu foto de perfil" aria-describedby="basic-addon1" value="">
+							<p><?= $errorFoto ?></p>
+						</div>
+		      </div>
+				 	<div class="form-group">
+						<div class="input-group mb-3">
+		          <input type="password" class="form-control" name="contraseña" placeholder="contraseña" aria-label="contraseña" aria-describedby="basic-addon1" value="<?= $contraseña?>">
+							<p><?= $errorContraseña ?></p>
+						</div>
 		      </div>
 		      <div class="form-group">
-		          <input type="password" class="form-control" placeholder="contraseña" aria-label="contraseña" aria-describedby="basic-addon1">
+						<div class="input-group mb-3">
+		          <input type="password" class="form-control" name="contraseñaConfirmar" placeholder="confirmación de contraseña" aria-label="confirmación de contraseña" aria-describedby="basic-addon1" value="<?= $confirmarcontraseña?>">
+						</div>
 		      </div>
-		      <div class="form-group">
-		          <input type="password" class="form-control" placeholder="confirmación de contraseña" aria-label="confirmación de contraseña" aria-describedby="basic-addon1">
-		      </div>
+
 					<div class="form-group">
 						<input type="submit" value="Confirmar" class="btn float-right login_btn">
 					</div>
 					<div class="form-group">
 						<a href="login.php"><input type="button" value="Volver" class="btn float-right login_btn"></a>
 					</div>
+
+
 				</form>
 			</div>
 			<div class="card-footer">

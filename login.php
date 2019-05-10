@@ -1,3 +1,7 @@
+<?php
+include("partials/val_login.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +41,7 @@
 
 			</div>
 			<div class="card-body">
-				<form action="#" method="post">
+				<form class="form-login" action="login.php" method="post" enctype="multipart/form-data">
 
 					<div class="form-group social_login">
 						<a class="btn btn-block btn-social btn-twitter">
@@ -58,17 +62,17 @@
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="usuario">
-
+						<input type="text" class="form-control" placeholder="usuario" name="email" value="<?= $email?>">
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="contraseña">
+						<input type="password" class="form-control" placeholder="contraseña" name="contraseña">
 					</div>
+					<p><?= $error ?></p>
 					<div class="row align-items-center remember">
-						<input type="checkbox">Recuérdame
+						<input type="checkbox" class= "remember" name="record" value="si">Recuérdame
 					</div>
 					<div class="form-group">
 						<input type="submit" value="Ingresar" class="btn float-right login_btn">

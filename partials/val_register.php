@@ -107,7 +107,9 @@
       "apellido" => $apellido,
       "email"=> $email,
       "foto" => $nombre."fotodeperfil.".$ext,
-      "contraseña" => password_hash($contraseña, PASSWORD_DEFAULT)];
+      // Cambio a la palabra "contrasenia" porque con la ñ
+      // el JSON se guarda mal.
+      "contrasenia" => password_hash($contraseña, PASSWORD_DEFAULT)];
 
       // Agrego mi usuario nuevo al array de todos los usuarios
       $UsuariosEnArray[] = $UsuarioNuevo;
@@ -118,7 +120,7 @@
       // Guardo el JSON
       file_put_contents('json/usuarios.json',$NuevosUsuariosEnJson);
 
-      //header('Location:http://google.com');
+      header('Location:Login.php');
     }
 
 }

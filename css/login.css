@@ -80,6 +80,12 @@ box-shadow: inset 10em 10em gold !important;
 
 }
 
+.remember:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
 .file-input::-webkit-file-upload-button{
   visibility: hidden;
 }
@@ -187,6 +193,10 @@ margin-left: 4px;
 .form-group p {
   color:white;
   margin-left: 10px;
+}
+
+.form-login p {
+  color:white;
 }
 
 @media (min-width:1024px){

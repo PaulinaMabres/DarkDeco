@@ -45,7 +45,7 @@
             if (session_status() == PHP_SESSION_NONE) {
                 session_start();
             }
-            if( isset($_SESSION['logeado']) &&  $_SESSION['logeado'] )
+            if( isset($_SESSION['logueado']) &&  $_SESSION['logueado'] )
             {
               echo ' <a class="dropdown-item" href="logout.php"><button class="btn btn-outline-danger" type="submit">Log out</button></a>';
             }

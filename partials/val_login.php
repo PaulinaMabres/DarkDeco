@@ -58,7 +58,7 @@
       }else{
         $_SESSION['recuerdame'] = "";
       }
-      $_SESSION['logeado'] = true;
+      $_SESSION['logueado'] = true;
       header('Location:Home.php');
     }
   }

@@ -60,9 +60,10 @@ include("partials/val_login.php");
 
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
+							<span class="input-group-text"><i class="fas fa-user"></i>
+							</span>
 						</div>
-						<input type="text" class="form-control" placeholder="usuario" name="email" value="<?= $email?>">
+						<input type="text" class="form-control" placeholder="correo" name="email" value="<?= $email?>">
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
@@ -72,7 +73,9 @@ include("partials/val_login.php");
 					</div>
 					<p><?= $error ?></p>
 					<div class="row align-items-center remember">
-						<input type="checkbox" class= "remember" name="record" value="si">Recuérdame
+						<input type="checkbox" class= "remember" name="record" value="si" <?php if( $recuerdame == "si" ){echo "checked";}?> >Recuérdame
+
+
 					</div>
 					<div class="form-group">
 						<input type="submit" value="Ingresar" class="btn float-right login_btn">

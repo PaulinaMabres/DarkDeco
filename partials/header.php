@@ -41,7 +41,20 @@
           </a>
 
           <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="login.php"><button class="btn btn-outline-success" type="submit">Log in</button></a>
+            <?php
+            if (session_status() == PHP_SESSION_NONE) {
+                session_start();
+            }
+            if( isset($_SESSION['logeado']) &&  $_SESSION['logeado'] )
+            {
+              echo ' <a class="dropdown-item" href="logout.php"><button class="btn btn-outline-danger" type="submit">Log out</button></a>';
+            }
+            else
+            {
+              echo '<a class="dropdown-item" href="login.php"><button class="btn btn-outline-success" type="submit">Log in</button></a>';
+            }
+            ?>
+
             <a class="dropdown-item" href="register.php"><button class="btn btn-sm btn-outline-secondary" type="submit">No tenes cuenta? Registrate!</button></a>
 
           </div>

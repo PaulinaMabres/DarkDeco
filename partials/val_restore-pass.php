@@ -84,7 +84,7 @@ if($_POST){
 
     $error = "OK --> login";
     // Ir al login
-    header('location: login.php');
+    header("location: login.php");
   }
 }
 

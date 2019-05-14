@@ -53,14 +53,14 @@ include("partials/val_restore-pass.php");
 							<input type="text" class="form-control" placeholder="correo" name="email" value="<?= $email?>">
 						</div>
 
-						<h3>Nombre de tu escuela primaria</h3>
+						<!-- <h3>Nombre de tu escuela primaria</h3> -->
 
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-question"></i>
 								</span>
 							</div>
-							<input type="text" class="form-control" placeholder="respuesta secreta" name="respuestaSecreta" value="<?= $respuestaSecreta?>">
+							<input type="text" class="form-control" placeholder="nombre de tu escuela primaria" name="respuestaSecreta" value="<?= $respuestaSecreta?>">
 						</div>
 						<div class="input-group form-group">
 							<div class="input-group-prepend">

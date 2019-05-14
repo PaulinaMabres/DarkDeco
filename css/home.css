@@ -14,7 +14,6 @@ body{
 
 .jumbotron{
   background-image: url('../img/tokystok02.png');
-  /* background-color: rgb(199,160,77); /*Ocre*/
   background-size: cover;
   border-radius: 50px;
   margin-top: 20px;

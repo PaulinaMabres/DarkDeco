@@ -7,20 +7,16 @@
 
 /* @import url('https://fonts.googleapis.com/css?family=Numans'); */
 
-h3 {
-  color: white;
-}
-
 html,body{
   background-image: url('../img/interior.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-  font-family: 'Numans', sans-serif;
+  /* font-family: 'Numans', sans-serif; */
 }
 
 .container{
-  height: 100%;
+  height: 110%;
   align-content: center;
 }
 

@@ -125,7 +125,7 @@ if($_POST){
       // Guardo el JSON
       file_put_contents('json/usuarios.json',$NuevosUsuariosEnJson);
 
-      header('location:Login.php');
+      header('location: login.php');
     }
   }
 

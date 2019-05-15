@@ -6,7 +6,7 @@ if (session_status() == PHP_SESSION_NONE) {
 // Buscar los datos del usuario.
 $UsuariosEnJSON = file_get_contents('json/usuarios.json');    // Traigo los datos del JSON
 $UsuariosEnArray = json_decode($UsuariosEnJSON, true);        // Convierto JSON a Array
-var_dump($UsuariosEnArray);
+// var_dump($UsuariosEnArray);
 // $contrasenia_json = "";
 
 $nombre = "";
@@ -89,7 +89,7 @@ if($_POST){
       // Guardo el JSON
       file_put_contents('json/usuarios.json',$UsuariosEnJson);
 
-      header('location:Home.php');
+      header('location: home.php');
     }
   }
 

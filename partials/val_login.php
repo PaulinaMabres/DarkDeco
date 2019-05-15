@@ -61,7 +61,7 @@
 
       $error = "OK --> home";
       // Ir al home
-      header("location: home.php");
+      header('location: home.php');
     }
   }
   else{

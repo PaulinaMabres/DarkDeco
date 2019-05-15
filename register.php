@@ -35,7 +35,7 @@ include("partials/val_register.php");
 				</div>
 				<div class="card-body">
 					<form class="" action="register.php" method="post" enctype="multipart/form-data">
-						<div class="form-group social_login">
+						<!-- <div class="form-group social_login">
 							<a class="btn btn-block btn-social btn-twitter">
 								<span class="fab fa-twitter"></span> Registrate con Twitter
 							</a>
@@ -48,7 +48,7 @@ include("partials/val_register.php");
 							<div class = "space">
 								O
 							</div>
-						</div>
+						</div> -->
 
 						<div class="form-group">
 							<div class="input-group mb-3">

@@ -3,11 +3,12 @@ if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
 
-//CARGO ERRORES VACIOS PARA MOSTRAR LA PRIMERA VEZ EN PANTALLA
+// Variables para persistencia
 $email = "";
 $contrasenia = "";
 $respuestaSecreta = "";
 
+//CARGO ERRORES VACIOS PARA MOSTRAR LA PRIMERA VEZ EN PANTALLA
 $error = "";
 $hayErrores = false;
 
@@ -77,10 +78,10 @@ if($_POST){
     $UsuariosEnArray[$indice]['contrasenia'] = password_hash($contrasenia, PASSWORD_DEFAULT);
 
     // Convierto de nuevo el array con todos los usuarios a formato JSON
-    $NuevosUsuariosEnJson = json_encode($UsuariosEnArray);
+    $UsuariosEnJson = json_encode($UsuariosEnArray);
 
     // Guardo el JSON
-    file_put_contents('json/usuarios.json',$NuevosUsuariosEnJson);
+    file_put_contents('json/usuarios.json',$UsuariosEnJson);
 
     $error = "OK --> login";
     // Ir al login

@@ -17,9 +17,9 @@ html,body{
 
 .container{
   height: 100%;
-  align-content: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  /* align-content: center; */
+  /* margin-top: 10px; */
+  /* margin-bottom: 20px; */
 }
 
 .card{

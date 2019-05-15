@@ -76,19 +76,19 @@ include("partials/val_register.php");
 						</div>
 						<div class="form-group">
 							<div class="input-group mb-3">
-								<input type="password" class="form-control" name="contrasenia" placeholder="contrasenia" aria-label="contrasenia" aria-describedby="basic-addon1" value="<?= $contrasenia?>">
+								<input type="password" class="form-control" name="contrasenia" placeholder="contraseña" aria-label="contraseñasa" aria-describedby="basic-addon1" value="<?= $contrasenia?>">
 								<p><?= $errorContrasenia ?></p>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="input-group mb-3">
-								<input type="password" class="form-control" name="contraseniaConfirmar" placeholder="confirmación de contrasenia" aria-label="confirmación de contrasenia" aria-describedby="basic-addon1" value="<?= $confirmarcontrasenia?>">
+								<input type="password" class="form-control" name="contraseniaConfirmar" placeholder="confirmación de contraseña" aria-label="confirmación de contraseña" aria-describedby="basic-addon1" value="<?= $confirmarcontrasenia?>">
 								<p><?= '' ?></p> <!-- *Paulina* Le pongo el error vacío porque si no lo tiene, el imput queda más ancho que los demás  -->
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="input-group mb-3">
-								<input type="text" class="form-control" name="respuestaSecreta" placeholder="Respuesta secreta: nombre de tu escuela primaria" aria-label="respuestaSecreta" aria-describedby="basic-addon1" value="<?= $respuestaSecreta?>">
+								<input type="text" class="form-control" name="respuestaSecreta" placeholder="Resp. secreta: nombre de tu esc. primaria" aria-label="respuestaSecreta" aria-describedby="basic-addon1" value="<?= $respuestaSecreta?>">
 								<p><?= $errorRespuestaSecreta ?></p>
 							</div>
 						</div>

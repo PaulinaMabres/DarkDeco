@@ -52,19 +52,20 @@ if (session_status() == PHP_SESSION_NONE) {
       <div class="col-md-4">
         <!-- <i class="icono-opcionnes fas fa-star"></i><br> -->
         <i class="icono-opciones fas fa-home"></i><br>
-        <a href="#">PRODUCTOS</a>
+        <!-- <a href="#">PRODUCTOS</a> -->
+        <h3>PRODUCTOS</h3>
         <p>Explorá nuestra línea de productos para tu casa</p>
       </div>
       <div class="col-md-4">
         <!-- <i class="icono-opciones fas fa-star"></i><br> -->
         <i class="icono-opciones fas fa-home"></i><br>
-        <a href="#">GALERÍA</a>
+        <h3>GALERÍA</h3>
         <p>Inspirate con nuestras ambientaciones</p><br>
       </div>
       <div class="col-md-4">
         <!-- <i class="icono-opciones fas fa-star"></i><br> -->
         <i class="icono-opciones fas fa-home"></i><br>
-        <a href="#">ASESORAMIENTO</a>
+        <h3>ASESORAMIENTO</h3>
         <p>Recibí asesoramiento online o pedí una cita con alguno de nuestros decoradores.</p>
       </div>
     </div>

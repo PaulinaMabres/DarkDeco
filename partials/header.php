@@ -15,8 +15,8 @@
       <div class="navbar-nav mr-auto ml-auto text-center">
         <a class="nav-item nav-link active h4 ml-3" href="home.php">Home</a>
 
-        <!-- IDEA: Categorias -->
-        <li class="nav-item dropdown">
+        <!-- IDEA: Categorias
+         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle h4 ml-3 p-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Categorías
           </a>
@@ -26,45 +26,56 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#"> <center>Promociones</center></a>
           </div>
-        </li>
+        </li> -->
 
         <a class="nav-item nav-link h4 ml-3" href="faq.php">FAQ</a>
-        <a class="nav-item nav-link h4 ml-3" href="#"> Extra </a>
+        <!-- IDEA: LINK extra
+        <a class="nav-item nav-link h4 ml-3" href="#"> Extra </a> -->
       </div>
 
       <!-- IDEA: LOGIN collapse -->
-      <div class="navbar-nav d-flex flex-row justify-content-around">
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-user-circle fa-2x"></i>
-          </a>
-
-          <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+      <div class="login-collapse navbar-nav d-flex flex-row justify-content-around">
             <?php
             if (session_status() == PHP_SESSION_NONE) {
                 session_start();
             }
             if( isset($_SESSION['logueado']) &&  $_SESSION['logueado'] )
             {
-              echo ' <a class="dropdown-item" href="logout.php"><button class="btn btn-outline-danger" type="submit">Log out</button></a>';
+              // IDEA: SI el usuario está logueado:
+              echo '
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user-circle fa-2x"></i>
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="logout.php"><button class="btn btn-outline-danger" type="submit">Log out</button></a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="edit-usuario.php">Modificar perfil</a>
+                </div>
+              </li>
+
+              </div>';
             }
             else
             {
-              echo '<a class="dropdown-item" href="login.php"><button class="btn btn-outline-success" type="submit">Log in</button></a>';
+              // IDEA: SI no lo está:
+              echo '
+              <a class="btn btn-outline-warning mr-3 h4" href="register.php">Registrate</a>
+              <a class= "btn text-white mr-3 h4 " href="login.php">Iniciar sesión</a>
+              ';
             }
             ?>
+        </div>
 
-            <a class="dropdown-item" href="register.php"><button class="btn btn-sm btn-outline-secondary" type="submit">No tenes cuenta? Registrate!</button></a>
 
-          </div>
-        </li>
 
-      </div>
+      <!-- IDEA: CARRITO; se comenta porque no funciona -->
+      <!-- <a class=" nav-link text-secondary d-flex justify-content-center mb-2"href="#"><i class="fas fa-shopping-cart fa-2x"></i>
+      </a> -->
 
-      <!-- IDEA: CARRITO -->
-      <a class=" nav-link text-secondary d-flex justify-content-center mb-2"href="#"><i class="fas fa-shopping-cart fa-2x"></i>
-      </a>
 
       <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Búsqueda" aria-label="Search">

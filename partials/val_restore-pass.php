@@ -83,9 +83,8 @@ if($_POST){
     // Guardo el JSON
     file_put_contents('json/usuarios.json',$UsuariosEnJson);
 
-    $error = "OK --> login";
     // Ir al login
-    header("location: login.php");
+    header('location: login.php');
   }
 }
 

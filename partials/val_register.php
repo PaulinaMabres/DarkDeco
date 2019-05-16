@@ -1,5 +1,4 @@
 <?php
-
 //CARGO ERRORES VACIOS PARA MOSTRAR LA PRIMERA VEZ EN PANTALLA
 $nombre = "";
 $apellido = "";

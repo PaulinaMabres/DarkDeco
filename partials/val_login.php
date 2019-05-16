@@ -7,11 +7,12 @@
   $contrasenia = "";
   $error = "";
   $recuerdame = false;
+  $hayErrores = false;
+
   //SI RECIBO ALGO POR POST
   if($_POST){
     $email = trim($_POST["email"]);
     $contrasenia = trim($_POST["contrasenia"]);
-    $recuerdame = false;
     if( isset($_POST['record']) && $_POST['record'] == "si"){
       $recuerdame = true;
     }
@@ -59,9 +60,9 @@
       }
       $_SESSION['logueado'] = true;
 
-      $error = "OK --> home";
       // Ir al home
       header('location: home.php');
+      exit;
     }
   }
   else{

@@ -1,6 +1,9 @@
 #header .color {
     background: #1E1B2C !important;
   }
+#header .anchura{
+  max-width: 100vw;
+}
 .header {
   background-size: auto;
 }

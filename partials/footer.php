@@ -2,9 +2,9 @@
     <section id="footer">
 
       <?php // IDEA: Se comenta barra de footer ?>
-      <!-- <div class="container-fluid">
+       <div class="container-fluid siempreAbajo">
 
-        <div class="row text-center text-xs-center text-sm-left text-md-left">
+      <!--  <div class="row text-center text-xs-center text-sm-left text-md-left">
 
           <div class="col-xs-12 col-sm-4 col-md-3 offset-md-2"><h5>Navegación</h5>
             <ul class="list-unstyled links ">
@@ -62,7 +62,7 @@
             </div>
   				</div>
   				</hr>
-  			</div>
+  		</div>
     <!-- Extra Footer -->
       <div class="row extra-footer">
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">

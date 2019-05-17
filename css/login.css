@@ -1,6 +1,6 @@
 /* Made with love by Mutiullah Samim*/
 
-/* background-color: rgba(145, 136, 119, 0.6); /*Gris*/
+/* color: rgba(145, 136, 119, 0.6); /*Gris*/
 /* color: rgb(199,160,77); /*Ocre*/
 /* color: rgb(156, 145, 82); /*Verde*/
 /* color: rgb(23, 90, 108); /*Azul*/
@@ -16,10 +16,10 @@ html,body{
 }
 
 .container{
-  height: 80%;
+  height: 100%;
   /* align-content: center; */
   /* margin-top: 10px; */
-  /* margin-bottom: 20px; */
+  margin-bottom: 30px;
 }
 
 .card{
@@ -37,6 +37,7 @@ html,body{
 .card .file-input
 {
   font-size: 1.5rem;
+  overflow: hidden;
 }
 
 .card a {
@@ -87,8 +88,7 @@ top: -45px;
 
 input:focus{
   outline: 0 0 0 0  !important;
-  box-shadow: inset 10em 10em gold !important;
-
+  box-shadow: inset 10em 10em lightgray !important;
 }
 
 .remember:focus{
@@ -97,13 +97,13 @@ input:focus{
 
 }
 
-.file-input::-webkit-file-upload-button{
-  visibility: hidden;
-}
+/* .file-input::-webkit-file-upload-button{
+visibility: hidden;
+} */
 
-.file-input::before {
-  content: 'tu foto';
-}
+/* .file-input::before {
+content: 'tu foto';
+} */
 
 .remember{
   color: white;

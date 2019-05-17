@@ -6,12 +6,13 @@ if (session_status() == PHP_SESSION_NONE) {
 // Buscar los datos del usuario.
 $UsuariosEnJSON = file_get_contents('json/usuarios.json');    // Traigo los datos del JSON
 $UsuariosEnArray = json_decode($UsuariosEnJSON, true);        // Convierto JSON a Array
-// var_dump($UsuariosEnArray);
-// $contrasenia_json = "";
 
 $nombre = "";
 $apellido = "";
 $foto = "";
+
+// var_dump($_SESSION);
+// exit;
 
 $indice = 0; // Para saber a qué usuario le actualizo los datos
 if(isset($UsuariosEnArray) || count($UsuariosEnArray) > 0){
@@ -20,7 +21,6 @@ if(isset($UsuariosEnArray) || count($UsuariosEnArray) > 0){
       $nombre = $usuario['nombre'];
       $apellido = $usuario['apellido'];
       $foto = $usuario['foto'];
-      // $respuestaSecreta = $usuario[$indice]['respuestaSecreta'];
       break;  // *Paulina* agrego el break para que no siga recorriendo usuarios cuando ya lo encontró
     }
     $indice++;

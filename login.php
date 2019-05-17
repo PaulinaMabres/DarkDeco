@@ -9,16 +9,11 @@ include("partials/val_login.php");
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Iniciar Sesión</title>
 	<!--Made with love by Mutiullah Samim -->
-
 	<?php
 	include('partials/headmaster.php');
 	?>
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="css/login.css">
-
-
-
-	<!-- <link rel="stylesheet" href="css/home.css"> -->
 </head>
 <body>
 

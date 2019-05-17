@@ -72,10 +72,12 @@ if (session_status() == PHP_SESSION_NONE) {
 
   </div>
 
-  <?php
-  // FOOTER
-  include('partials/footer.php');
-  ?>
+  <footer>
+    <?php
+    // FOOTER
+    include('partials/footer.php');
+    ?>
+  </footer>
 
   <?php
   // jqwery scripts

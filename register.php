@@ -8,7 +8,9 @@ include("partials/val_register.php");
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Registro</title>
-	<?php include('partials/headmaster.php'); ?>
+	<?php
+	include('partials/headmaster.php');
+	?>
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
@@ -35,20 +37,6 @@ include("partials/val_register.php");
 				</div>
 				<div class="card-body">
 					<form class="" action="register.php" method="post" enctype="multipart/form-data">
-						<!-- <div class="form-group social_login">
-							<a class="btn btn-block btn-social btn-twitter">
-								<span class="fab fa-twitter"></span> Registrate con Twitter
-							</a>
-							<a class="btn btn-block btn-social btn-facebook">
-								<span class="fab fa-facebook"></span> Registrate con Facebook
-							</a>
-							<a class="btn btn-block btn-social btn-google">
-								<span class="fab fa-google"></span> Registrate con Google
-							</a>
-							<div class = "space">
-								O
-							</div>
-						</div> -->
 
 						<div class="form-group">
 							<div class="input-group mb-3">
@@ -102,19 +90,20 @@ include("partials/val_register.php");
 
 					</form>
 				</div>
-				<!-- <div class="card-footer">
-			</div> -->
+			</div>
 		</div>
 	</div>
-</div>
 
-<?php
-// FOOTER
-include('partials/footer.php');
-?>
-<?php
-// jqwery scripts
-include('partials/jqweryscripts.php');
-?>
+	<footer>
+		<?php
+		// FOOTER
+		include('partials/footer.php');
+		?>
+	</footer>
+
+	<?php
+	// jqwery scripts
+	include('partials/jqweryscripts.php');
+	?>
 </body>
 </html>

@@ -1,5 +1,0 @@
-val_register.php
-después de grabar el usuario no va al login --> header('location:Login.php');
-
-val_restore-pass.php
-después de actualizar la contraseña no va al login --> header('location:Login.php');

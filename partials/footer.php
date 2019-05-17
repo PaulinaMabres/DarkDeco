@@ -56,7 +56,7 @@
                 <div class="cajaEmail d-flex justify-content-center">
                   <i class="fas fa-paper-plane"></i>
                   <input type="email" name="" value="" placeholder="ingresa tu e-mail" class="cajaTexto">
-                  <button type="button" name="button" class="text-dark boton">Suscribirse</button>
+                  <button type="button" name="button" class="text-dark boton">No funciona</button>
                 </div>
               </ul>
             </div>

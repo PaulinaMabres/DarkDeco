@@ -46,11 +46,20 @@
               echo '
 
 
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown btn-group dropleft">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-user-circle fa-2x"></i>
                 </a>
                 <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                  <h6>&nbsp Bienvenido, <strong>';
+                  $UsuariosEnJSON = file_get_contents('json/usuarios.json');
+                  $UsuariosEnArray = json_decode($UsuariosEnJSON, true);
+                    foreach ($UsuariosEnArray as $usuario){
+                      static $usuario;
+                      echo $usuario['nombre'];
+                    }
+
+                  echo'</strong> </h6>
                   <a class="dropdown-item" href="logout.php"><button class="btn btn-outline-danger" type="submit">Log out</button></a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="edit-usuario.php">Modificar perfil</a>
@@ -76,11 +85,11 @@
       <!-- <a class=" nav-link text-secondary d-flex justify-content-center mb-2"href="#"><i class="fas fa-shopping-cart fa-2x"></i>
       </a> -->
 
-
-      <form class="form-inline">
+      <?php // IDEA: Se comenta porque no funciona [Boton de busqueda ] ?>
+      <!-- <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Búsqueda" aria-label="Search">
         <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
-      </form>
+      </form> -->
 
 
     </div>

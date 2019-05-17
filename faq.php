@@ -23,7 +23,7 @@ if (session_status() == PHP_SESSION_NONE) {
   </header>
 
   <!-- Contenido de FAQ -->
-  <div class="container-fluid">
+  <div class="container-fluid ayudinHeight d-flex align-items-center"> <?php // IDEA: (Lucas) agrego una clase de min height para arreglar una cosa ?>
 
     <?php
     include('partials/arrayFAQs.php');

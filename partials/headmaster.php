@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/bootstrap-social.css">
+<link rel="icon" href="img/logoIcono.ico">
 
 <!-- Font -->
 <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">

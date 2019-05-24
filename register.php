@@ -39,7 +39,7 @@ include("partials/val_register.php");
 					<form class="" action="register.php" method="post" enctype="multipart/form-data">
 
 						<div class="form-group">
-							<div class="input-group mb-3">
+							<div class="input-group d-flex flex-column">
 								<input type="text" class="form-control" name="nombre" placeholder="tu nombre" aria-label="tu nombre" aria-describedby="basic-addon1" value="<?= $nombre?>">
 								<p><?= $errorNombre ?></p>
 							</div>
@@ -76,6 +76,11 @@ include("partials/val_register.php");
 						</div>
 						<div class="form-group">
 							<div class="input-group mb-3">
+								<select class="selectPregunta col-12" name="preguntaSecreta">
+									<option value="a">Nombre de tu escuela primaria</option>
+									<option value="b">Nombre de tu superhéroe favorito</option>
+									<option value="c">Año de nacimiento de tu madre</option>
+								</select>
 								<input type="text" class="form-control" name="respuestaSecreta" placeholder="Resp. secreta: nombre de tu esc. primaria" aria-label="respuestaSecreta" aria-describedby="basic-addon1" value="<?= $respuestaSecreta?>">
 								<p><?= $errorRespuestaSecreta ?></p>
 							</div>

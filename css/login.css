@@ -31,6 +31,7 @@ html,body{
   background-color: rgba(145, 136, 119, 0.6) !important; /*Gris*/
   font-size: 1.5rem;
 }
+
 .card .btn,
 .card .input-group-text,
 .card .form-control,
@@ -38,6 +39,26 @@ html,body{
 {
   font-size: 1.5rem;
   overflow: hidden;
+}
+
+.card-body .form-control{
+  width: 100% !important;
+
+}
+#login .card-body .form-control{
+  width: auto !important;
+}
+
+#login .input-group-text{
+  height: 32px!important;
+}
+
+#restore .card-body .form-control{
+  width: auto !important;
+}
+
+#restore .input-group-text{
+  height: 32px!important;
 }
 
 .card a {
@@ -84,6 +105,10 @@ top: -45px;
   background-color: #FFD728;
   color: black;
   border:0 !important;
+}
+
+.input-group-prepend{
+  display: inline-block!important;
 }
 
 input:focus{
@@ -168,6 +193,24 @@ content: 'tu foto';
 .container.login .social_login{
   display: none;
 }
+
+.form-group p {
+  /* color: rgb(199,160,77); /*Ocre*/
+  color:white;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 0!important;
+}
+
+.form-login p {
+  color:white;
+  font-weight: bold;
+}
+
+.card-footer{
+  font-weight: bold;
+}
+
 /*Celular*/
 @media (max-width:575px){
   .card .tablet{
@@ -199,14 +242,7 @@ content: 'tu foto';
 
 }
 
-.form-group p {
-  color:white;
-  margin-left: 10px;
-}
 
-.form-login p {
-  color:white;
-}
 
 @media (min-width:1024px){
   .login .tablet{

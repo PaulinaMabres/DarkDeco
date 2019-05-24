@@ -52,8 +52,8 @@
     // En este ejemplo, muestro como que se logueo correctamente
     // Para que se vea que está todo OK.
     if (!$hayErrores) {
+      $_SESSION['emailGuardado'] = $email;
       if ($recuerdame) {
-        $_SESSION['emailGuardado'] = $email;
         $_SESSION['recuerdame'] = $recuerdame;
       }else{
         $_SESSION['recuerdame'] = "";

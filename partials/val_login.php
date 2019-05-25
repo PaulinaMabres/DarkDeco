@@ -2,8 +2,12 @@
   if (session_status() == PHP_SESSION_NONE) {
       session_start();
   }
-  //CARGO ERRORES VACIOS PARA MOSTRAR LA PRIMERA VEZ EN PANTALLA
+  //Variables para persistencia
+
   $email = "";
+  if(isset($_SESSION['emailGuardado'])){
+    $email = $_SESSION['emailGuardado'];
+  }
   $contrasenia = "";
   $error = "";
   $recuerdame = false;

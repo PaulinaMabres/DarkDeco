@@ -1,4 +1,8 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 //CARGO ERRORES VACIOS PARA MOSTRAR LA PRIMERA VEZ EN PANTALLA
 $nombre = "";
 $apellido = "";
@@ -126,6 +130,10 @@ if($_POST){
 
       // Guardo el JSON
       file_put_contents('json/usuarios.json',$NuevosUsuariosEnJson);
+
+      $_SESSION['emailGuardado'] = $email;
+      $_SESSION['recuerdame'] = "";
+      $_SESSION['logueado'] = false;
 
       header('location: login.php');
     }

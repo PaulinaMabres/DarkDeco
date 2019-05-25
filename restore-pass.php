@@ -58,8 +58,6 @@ include("partials/val_restore-pass.php");
 								<span class="input-group-text"><i class="fas fa-question"></i>
 								</span>
 							</div>
-							<?php $preguntaSecrectaTexto = 'respuesta secreta'?>
-
 							<input type="text" class="form-control" placeholder= '<?=$preguntaSecrectaTexto?>' name="respuestaSecreta" value="<?= $respuestaSecreta?>">
 						</div>
 						<div class="input-group form-group">

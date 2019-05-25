@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 $email = "";
 $contrasenia = "";
 $respuestaSecreta = "";
-// $preguntaSecrectaTexto = 'respuesta secreta';
+$preguntaSecrectaTexto = 'respuesta secreta';
 
 //CARGO ERRORES VACIOS PARA MOSTRAR LA PRIMERA VEZ EN PANTALLA
 $error = "";
@@ -94,6 +94,10 @@ if($_POST){
 
     // Guardo el JSON
     file_put_contents('json/usuarios.json',$UsuariosEnJson);
+
+    $_SESSION['emailGuardado'] = $email;
+    $_SESSION['recuerdame'] = "";
+    $_SESSION['logueado'] = false;
 
     // Ir al login
     header('location: login.php');

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Servidor: localhost
--- Tiempo de generación: 27-05-2019 a las 17:02:09
--- Versión del servidor: 5.7.26-0ubuntu0.18.10.1
--- Versión de PHP: 7.2.17-0ubuntu0.18.10.1
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 28-05-2019 a las 00:54:06
+-- Versión del servidor: 10.1.38-MariaDB
+-- Versión de PHP: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `Clientes`
+-- Estructura de tabla para la tabla `clientes`
 --
 
-CREATE TABLE `Clientes` (
+CREATE TABLE `clientes` (
   `id` int(4) UNSIGNED NOT NULL,
   `email` varchar(70) NOT NULL,
   `nombre` varchar(50) NOT NULL,
@@ -46,23 +46,11 @@ CREATE TABLE `Clientes` (
 --
 
 --
--- Indices de la tabla `Clientes`
+-- Indices de la tabla `clientes`
 --
-ALTER TABLE `Clientes`
+ALTER TABLE `clientes`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`),
-  ADD KEY `nombre` (`nombre`),
-  ADD KEY `apellido` (`apellido`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `Clientes`
---
-ALTER TABLE `Clientes`
-  MODIFY `id` int(4) UNSIGNED NOT NULL AUTO_INCREMENT;
+  ADD UNIQUE KEY `email` (`email`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

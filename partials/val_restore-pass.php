@@ -96,6 +96,7 @@ if($_POST){
     file_put_contents('json/usuarios.json',$UsuariosEnJson);
 
     $_SESSION['emailGuardado'] = $email;
+    $_SESSION['nombreGuardado'] = $nombre;
     $_SESSION['recuerdame'] = "";
     $_SESSION['logueado'] = false;
 

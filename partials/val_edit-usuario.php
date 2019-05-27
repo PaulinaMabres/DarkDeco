@@ -89,6 +89,9 @@ if($_POST){
       // Guardo el JSON
       file_put_contents('json/usuarios.json',$UsuariosEnJson);
 
+      $_SESSION['nombreGuardado'] = $nombre;
+
+
       header('location: home.php');
     }
   }

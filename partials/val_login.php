@@ -34,6 +34,7 @@
           $existe = true;
           // Leo el campo "contrasenia" del JSON
           $contrasenia_json = $usuario['contrasenia'];
+          $nombre = $usuario['nombre'];
           break;  // *Paulina* agrego el break para que no siga recorriendo usuarios cuando ya lo encontró
         }
       }
@@ -57,6 +58,7 @@
     // Para que se vea que está todo OK.
     if (!$hayErrores) {
       $_SESSION['emailGuardado'] = $email;
+      $_SESSION['nombreGuardado'] = $nombre;
       if ($recuerdame) {
         $_SESSION['recuerdame'] = $recuerdame;
       }else{

@@ -1,5 +1,7 @@
 <?php
 include("partials/val_restore-pass.php");
+// var_dump($preguntaSecrectaTexto);
+// exit;
 ?>
 
 <!DOCTYPE html>
@@ -16,8 +18,6 @@ include("partials/val_restore-pass.php");
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 
-
-
 	<!-- <link rel="stylesheet" href="css/home.css"> -->
 </head>
 <body>
@@ -29,7 +29,7 @@ include("partials/val_restore-pass.php");
 	</header>
 
 
-	<div class="container login">
+	<div class="container login"  id="restore">
 
 		<div class="d-flex justify-content-center h-100 headerEspacio">
 			<div class="card">
@@ -58,7 +58,7 @@ include("partials/val_restore-pass.php");
 								<span class="input-group-text"><i class="fas fa-question"></i>
 								</span>
 							</div>
-							<input type="text" class="form-control" placeholder="nombre de tu escuela primaria" name="respuestaSecreta" value="<?= $respuestaSecreta?>">
+							<input type="text" class="form-control" placeholder= '<?=$preguntaSecrectaTexto?>' name="respuestaSecreta" value="<?= $respuestaSecreta?>">
 						</div>
 						<div class="input-group form-group">
 							<div class="input-group-prepend">

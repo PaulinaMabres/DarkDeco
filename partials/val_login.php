@@ -2,8 +2,12 @@
   if (session_status() == PHP_SESSION_NONE) {
       session_start();
   }
-  //CARGO ERRORES VACIOS PARA MOSTRAR LA PRIMERA VEZ EN PANTALLA
+  //Variables para persistencia
+
   $email = "";
+  if(isset($_SESSION['emailGuardado'])){
+    $email = $_SESSION['emailGuardado'];
+  }
   $contrasenia = "";
   $error = "";
   $recuerdame = false;
@@ -52,8 +56,8 @@
     // En este ejemplo, muestro como que se logueo correctamente
     // Para que se vea que está todo OK.
     if (!$hayErrores) {
+      $_SESSION['emailGuardado'] = $email;
       if ($recuerdame) {
-        $_SESSION['emailGuardado'] = $email;
         $_SESSION['recuerdame'] = $recuerdame;
       }else{
         $_SESSION['recuerdame'] = "";

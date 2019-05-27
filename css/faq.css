@@ -34,7 +34,6 @@ body{
 /* Footer necesario */
 .ayudinHeight{
   min-height: 90vh;
-  background: red;
   background-image: url('../img/fondoFaq.jpg');
   background-size: cover;
   background-repeat: no-repeat;

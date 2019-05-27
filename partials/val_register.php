@@ -1,4 +1,8 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 //CARGO ERRORES VACIOS PARA MOSTRAR LA PRIMERA VEZ EN PANTALLA
 $nombre = "";
 $apellido = "";
@@ -6,6 +10,7 @@ $email = "";
 $foto = "";
 $contrasenia = "";
 $confirmarcontrasenia = "";
+$preguntaSecreta = "";
 $respuestaSecreta = "";
 
 $errorNombre = "";
@@ -26,6 +31,7 @@ if($_POST){
   $foto = $_FILES["foto"]["name"];
   $contrasenia = trim($_POST["contrasenia"]);
   $confirmarcontrasenia = trim($_POST["contraseniaConfirmar"]);
+  $preguntaSecreta = $_POST["preguntaSecreta"];
   $respuestaSecreta = trim($_POST["respuestaSecreta"]);;
 
   //VALIDACION DE CADA DATO
@@ -112,6 +118,7 @@ if($_POST){
         // Cambio a la palabra "contrasenia" porque con la ñ
         // el JSON se guarda mal.
         "contrasenia" => password_hash($contrasenia, PASSWORD_DEFAULT),
+        "preguntaSecreta" => $preguntaSecreta,
         "respuestaSecreta" => password_hash($respuestaSecreta, PASSWORD_DEFAULT)
       ];
 
@@ -124,10 +131,18 @@ if($_POST){
       // Guardo el JSON
       file_put_contents('json/usuarios.json',$NuevosUsuariosEnJson);
 
+      $_SESSION['emailGuardado'] = $email;
+      $_SESSION['recuerdame'] = "";
+      $_SESSION['logueado'] = false;
+
       header('location: login.php');
     }
   }
 
+  if($hayErrores){
+    $_POST["contrasenia"] = '';
+    $_POST["contraseniaConfirmar"] = '';
+  }
 }
 
 ?>

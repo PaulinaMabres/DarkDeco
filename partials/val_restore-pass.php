@@ -7,6 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 $email = "";
 $contrasenia = "";
 $respuestaSecreta = "";
+$preguntaSecrectaTexto = 'respuesta secreta';
 
 //CARGO ERRORES VACIOS PARA MOSTRAR LA PRIMERA VEZ EN PANTALLA
 $error = "";
@@ -17,7 +18,7 @@ if($_POST){
   $email = trim($_POST["email"]);
   $contrasenia = trim($_POST["contrasenia"]);
   $confirmarcontrasenia = trim($_POST["confirmarContrasenia"]);
-  $respuestaSecreta = trim($_POST["respuestaSecreta"]);;
+  $respuestaSecreta = trim($_POST["respuestaSecreta"]);
 
   if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
     $error = "Email no válido";
@@ -28,7 +29,7 @@ if($_POST){
     // Verificar que el usuario exista
     $UsuariosEnJSON = file_get_contents('json/usuarios.json');    // Traigo los datos del JSON
     $UsuariosEnArray = json_decode($UsuariosEnJSON, true);        // Convierto JSON a Array
-    var_dump($UsuariosEnArray);
+    // var_dump($UsuariosEnArray);
     $contrasenia_json = "";
 
     $existe = false;
@@ -38,6 +39,17 @@ if($_POST){
         if(!$existe && $usuario['email'] == $email) {
           $existe = true;
           $respuestaSecretaJSON = $usuario['respuestaSecreta'];
+          if($usuario['preguntaSecreta'] == 'a'){
+            $preguntaSecrectaTexto = 'nombre de tu escuela primaria';
+          }elseif($usuario['preguntaSecreta'] == 'b'){
+            $preguntaSecrectaTexto = 'nombre de tu superhéroe favorito';
+          }elseif($usuario['preguntaSecreta'] == 'c'){
+            $preguntaSecrectaTexto = 'año de nacimiento de tu madre';
+          }
+          // var_dump($usuario);
+          // var_dump($preguntaSecrectaTexto);
+          // exit;
+
           break;  // *Paulina* agrego el break para que no siga recorriendo usuarios cuando ya lo encontró
         }
         $indice++;
@@ -82,6 +94,10 @@ if($_POST){
 
     // Guardo el JSON
     file_put_contents('json/usuarios.json',$UsuariosEnJson);
+
+    $_SESSION['emailGuardado'] = $email;
+    $_SESSION['recuerdame'] = "";
+    $_SESSION['logueado'] = false;
 
     // Ir al login
     header('location: login.php');

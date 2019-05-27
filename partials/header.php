@@ -52,12 +52,14 @@
                 </a>
                 <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                   <h6>&nbsp Bienvenido, <strong>';
+                  $userActual="";
                   $UsuariosEnJSON = file_get_contents('json/usuarios.json');
                   $UsuariosEnArray = json_decode($UsuariosEnJSON, true);
                     foreach ($UsuariosEnArray as $usuario){
-                      static $usuario;
-                      echo $usuario['nombre'];
-                    }
+                      global $userActual;
+                      $userActual=$usuario['nombre'];
+                      }
+                    echo $userActual;
 
                   echo'</strong> </h6>
                   <a class="dropdown-item" href="logout.php"><button class="btn btn-outline-danger" type="submit">Log out</button></a>

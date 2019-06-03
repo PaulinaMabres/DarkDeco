@@ -61,6 +61,9 @@
       $_SESSION['nombreGuardado'] = $nombre;
       if ($recuerdame) {
         $_SESSION['recuerdame'] = $recuerdame;
+        // setcookie(name,value,expire,path,domain,secure,httponly);
+        setcookie("UsuarioLogueado", true, time() + (86400), "/");
+
       }else{
         $_SESSION['recuerdame'] = "";
       }

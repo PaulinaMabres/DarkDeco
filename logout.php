@@ -5,6 +5,11 @@
   {
     $email = "";
     $recuerdame = false;
+
+    // Borrar cookie
+    $_COOKIE['UsuarioLogueado']  = false;
+    setcookie("UsuarioLogueado", false, time() - 3600 , "/");
+
     if( isset($_SESSION['recuerdame']) && $_SESSION['recuerdame'] ){
       $email = $_SESSION['emailGuardado'];
       $recuerdame = true;

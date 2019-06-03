@@ -40,7 +40,8 @@
             if (session_status() == PHP_SESSION_NONE) {
                 session_start();
             }
-            if( isset($_SESSION['logueado']) &&  $_SESSION['logueado'] )
+            if( isset($_SESSION['logueado']) &&  $_SESSION['logueado']
+                && isset($_COOKIE['UsuarioLogueado']) && $_COOKIE['UsuarioLogueado'] == true )
             {
               // IDEA: SI el usuario está logueado:
               echo '

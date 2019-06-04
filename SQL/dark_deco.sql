@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-05-2019 a las 00:54:06
+-- Tiempo de generación: 04-06-2019 a las 14:10:21
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.3
 
@@ -41,6 +41,33 @@ CREATE TABLE `clientes` (
   `banco_id` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `colores`
+--
+
+CREATE TABLE `colores` (
+  `id` int(2) UNSIGNED NOT NULL,
+  `color` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `productos`
+--
+
+CREATE TABLE `productos` (
+  `id` int(4) UNSIGNED NOT NULL,
+  `nombre` varchar(30) NOT NULL,
+  `id_color` int(2) UNSIGNED DEFAULT NULL,
+  `foto` blob,
+  `precio` float DEFAULT NULL,
+  `descripcion` text,
+  `stock` int(3) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Índices para tablas volcadas
 --
@@ -51,6 +78,36 @@ CREATE TABLE `clientes` (
 ALTER TABLE `clientes`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indices de la tabla `colores`
+--
+ALTER TABLE `colores`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `color` (`color`);
+
+--
+-- Indices de la tabla `productos`
+--
+ALTER TABLE `productos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `nombre` (`nombre`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `colores`
+--
+ALTER TABLE `colores`
+  MODIFY `id` int(2) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `productos`
+--
+ALTER TABLE `productos`
+  MODIFY `id` int(4) UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

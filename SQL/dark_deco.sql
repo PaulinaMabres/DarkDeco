@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-06-2019 a las 14:10:21
+-- Tiempo de generación: 11-06-2019 a las 19:29:54
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.3
 
@@ -52,6 +52,22 @@ CREATE TABLE `colores` (
   `color` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `colores`
+--
+
+INSERT INTO `colores` (`id`, `color`) VALUES
+(5, 'Amarillo'),
+(4, 'Azul'),
+(1, 'Blanco'),
+(9, 'Celeste'),
+(10, 'Gris'),
+(2, 'Negro'),
+(7, 'Rojo'),
+(8, 'Rosa'),
+(6, 'Verde'),
+(3, 'Violeta');
+
 -- --------------------------------------------------------
 
 --
@@ -67,6 +83,18 @@ CREATE TABLE `productos` (
   `descripcion` text,
   `stock` int(3) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+INSERT INTO `productos` (`id`, `nombre`, `id_color`, `foto`, `precio`, `descripcion`, `stock`) VALUES
+(5, 'Silla Eames', 2, '', 200, 'Silla Eames plastico y madera', 140),
+(6, 'Cama', 3, '', 600, '', 40),
+(7, 'Mesa', 6, '', 300, 'Mesa redonda chica', 2),
+(8, 'Sofa', 10, '', 20000, 'Sofa de tres cuerpos', 4),
+(9, 'Silla Quilmes', 2, '', 200, 'Silla plegable metálica', 120),
+(11, 'Silla Eames', 2, '', 200, 'Silla Eames plastico y madera', 160);
 
 --
 -- Índices para tablas volcadas
@@ -101,13 +129,13 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `colores`
 --
 ALTER TABLE `colores`
-  MODIFY `id` int(2) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(2) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(4) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(4) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

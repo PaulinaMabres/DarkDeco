@@ -1,143 +1,377 @@
 body{
-  text-align: center;
-}
-.headerEspacio{
-  padding-top: 61px !important;
-}
-.box-max{
-  max-height: 47em;
-  max-width: 30em;
-}
-.img-max{
-  max-height: 47em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.jumbotron{
-  background-image: url('../img/tokystok02.png');
+/* --------Inicio foto INICIO------------ */
+
+.fuenteDiferente{
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.textoEscrito{
+  background: url("../img/carrusel_1.jpg");
+  height: 100vh;
+  margin: auto;
+  background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50px;
-  margin-top: 20px;
+  background-position: top;
 }
-.jumbotron h1{
-  font-size: 48px;
+.line {
+      position: relative;
+      top: 50%;
+      width: 13em;      /* IDEA: Acá se toca para alargar/achicar el ancho del efecto (1)*/
+      margin: 0 auto;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 7vw!important;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+       background-color: rgba(25, 42, 86,0.7);
+      color:#f5f6fa;
 }
-.jumbotron .lead{
-  color: white;
+/*Animacion*/
+.anim-typewriter {
+      animation: typewriter 4s steps(36) 1s 1 normal both,
+      blinkTextCursor 500ms steps(36) infinite normal;
 }
-.jumbotron h2{
-  font-size: 30px;
-  text-decoration: underline;
-}
-.productos{
-  background-color: rgba(145, 136, 119, 0.6); /*Gris*/
-  display: none;
-  height: auto;
-  border-radius: 5px;
-  color: white;
-  padding: 30px;
-}
-.productos img{
-  width: 90%;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  color: white;
-}
-.productos p{
-  line-height: 10px;
-}
-.productos .ver-mas{
-  text-decoration: none;
-  color: white;
-  font-size: 10px;
-}
-.promociones{
-  background-color: rgba(145, 136, 119, 0.6); /*Gris*/
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  padding-top: 10px;
-  color: white;
-}
-.promociones a{
-  text-decoration: none;
-  color: white;
-  font-size: 10px;
-}
-.estrella{
-  font-size: 30px;
-  padding-bottom: 5px;
-}
-.opciones{
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 20px;
-}
-.opciones a{
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-.opciones a:hover{
-  color: rgb(199,160,77); /*Ocre*/
-}
-.opciones p{
-  font-size: 15px;
-}
-.icono-opciones{
-  /* color: rgb(156, 145, 82); /*Verde*/
-  color: rgb(23, 90, 108); /*Azul*/
-}
-/* Tablet */
-@media (min-width:768px){
-  .jumbotron{
-    height: 80%px;
-  }
-  .jumbotron h2{
-    font-size: 16px;
-  }
-  .jumbotron p{
-    font-size: 11px;
-  }
-  .jumbotron .lead{
-    font-size: 14px;
-  }
-  .productos{
-    display: block;
-    padding: 10px;
-  }
-  .productos a{
-    font-size: 12px;
-    text-decoration: none;
-    color: white;
-  }
-  .promociones{
-    height: 150px;
-    padding: 10px;
-  }
-  .promociones a{
-    display: none;
-  }
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 13em; /* IDEA:  Acá se toca para alargar/achicar el ancho del efecto (2) */
+      }
 }
 
-/* Desktop */
-@media (min-width:1024px){
-  .jumbotron h2{
-    font-size: 20px;
-  }
-  .jumbotron p{
-    font-size: 16px;
-  }
-  .jumbotron .dark-deco{
-    font-size: 6em;
-  }
-  .jumbotron .lead{
-    color: black;
-  }
-  .jumbotron .container{
-    color: black;
-  }
-  .productos{
-    display: block;
-  }
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+/* --------Fin foto INICIO------------ */
+
+/* --------General------------ */
+.articulosFoto{
+  height: 400px;
+
+}
+.titulo{
+  letter-spacing: -3px;
+}
+.espaciado{
+  letter-spacing: 7px;
+}
+.espaciadoChico{
+  letter-spacing: 4px;
+}
+/* -------Inicio imagenes Articulo--------- */
+
+.primer_articulo{
+  height: 330px;
+  background-image: url("../img/articulo_muestra_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%:
+}
+.segundo_articulo{
+  height: 330px;
+  background-image: url("../img/articulo_muestra_4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tercer_articulo{
+  height: 330px;
+  background-image: url("../img/articulo_muestra_5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cuarto_articulo{
+  height: 330px;
+  background-image: url("../img/articulo_muestra_6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+/* --------Fin imagenes articulos------------ */
+
+/* --------Foto Opcional------------ */
+.navidad{
+  height: 640px;
+  background-image: url("../img/oferta_especial.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* ---------Foto parallax1(uno)----------- */
+.parallax{
+  background: #fff fixed no-repeat 50% 50%;
+  background-size: cover;
+  height: 600px;
+  background-image: url("../img/gente_hablando.jpg");
+}
+/* -------------------- */
+
+/* IDEA: Inicio Contador animado! */
+.contadores{
+  background: #fff fixed no-repeat 50% 50%;
+  background-size: cover;
+  /* height: 600px; */
+  background-image: url("../img/fondo_contador1.jpg");
+
+}
+.seccionContador{
+  margin:7% auto;
+  color:rgb(255, 192, 72);
+}
+.cajaContador p{
+  font-size: 100%;
+}
+
+.cajaIcono{
+    margin: auto;
+     width: 100px;
+     height: 100px;
+     border: 3px solid #555;
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+}
+.cajaIcono .fas, .far{
+  margin: auto;
+  color: rgb(255, 192, 72);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* -----------Fin contador--------- */
+
+/* -----------Inicio fotosDestacado--------- */
+.primerDestacado{
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/individual/biblioteca_7.jpg");
+  background-position: center;
+  transition: 0.5s;
+  cursor:zoom-in;
+
+  z-index:7;
+}
+.primerDestacado:hover{
+  transform: scale(1.3);
+
+  z-index:0;
+}
+
+.segundoDestacado{
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/individual/biblioteca_3.jpg");
+  background-position: center;
+  transition: 0.5s;
+  cursor: zoom-in;
+
+  overflow: hidden;
+  z-index:5;
+}
+.segundoDestacado:hover{
+  transform: scale(1.3);
+
+  z-index: 0;
+}
+
+.tercerDestacado{
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/individual/biblioteca_4.jpg");
+  background-position: center;
+  transition: 0.5s;
+  cursor: zoom-in;
+
+  z-index:5;
+}
+.tercerDestacado:hover{
+  transform: scale(1.3);
+  transition: 0.5s;
+  z-index:0;
+}
+
+.cuartoDestacado{
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/individual/biblioteca_5.jpeg");
+  background-position: center;
+  transition: 0.5s;
+  cursor:zoom-in;
+
+  z-index: 6;
+}
+.cuartoDestacado:hover{
+  transform: scale(1.3);
+  z-index:0;
+}
+
+.quintoDestacado{
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/individual/biblioteca_6.jpg");
+  background-position: center;
+  transition: 0.5s;
+  cursor:zoom-in;
+
+  z-index:5;
+}
+.quintoDestacado:hover{
+  transform: scale(1.3);
+  transition: 0.5s;
+  z-index:0;
+}
+
+.sextoDestacado{
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/individual/estante_nordico.png");
+  background-position: center;
+  transition: 0.5s;
+  cursor:zoom-in;
+
+  z-index:5;
+}
+.sextoDestacado:hover{
+  transform: scale(1.3);
+  z-index:0;
+  transition: 0.5s;
+}
+
+
+.layer1 .textoEscondido{
+  width: 100%;
+  height: 100%;
+  visibility:hidden;
+  transition: 0s;
+}
+.layer1:hover .textoEscondido{
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: visible;
+  transition: 0s;
+}
+
+.layer2 .textoEscondido{
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: 0s;
+}
+.layer2:hover .textoEscondido{
+  background-color: rgba(0,0,0, 0.8);
+  visibility:visible;
+  transition: 0s;
+}
+
+.layer3 .textoEscondido{
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: 0s;
+}
+.layer3:hover .textoEscondido{
+  background-color: rgba(0,0,0, 0.8);
+  visibility:visible;
+  transition: 0s;
+}
+
+.layer4 .textoEscondido{
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.layer4:hover .textoEscondido{
+  background-color: rgba(0,0,0, 0.8);
+  visibility:visible;
+  transition: 0s;
+}
+
+.layer5 .textoEscondido{
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.layer5:hover .textoEscondido{
+  background-color: rgba(0,0,0, 0.8);
+  visibility:visible;
+  transition: 0s;
+}
+
+.layer6 .textoEscondido{
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.layer6:hover .textoEscondido{
+  background-color: rgba(0,0,0, 0.8);
+  visibility:visible;
+  transition: 0s;
+}
+
+.textoOculto1{
+  transition:0s!important;
+  color:white;
+  position: relative;
+  top:40%;
+}
+/* -----------Fin fotosDestacado--------- */
+
+
+#frase_ultima .frase_ultima{
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 3vh;
+  font-weight: bold;
+  background-color: rgba(52, 73, 94, 0.5);
+  margin-bottom: 30px;
+}
+.frase_ultima p{
+  margin-bottom:0;
+}
+
+
+
+
+
+
+/* Pisando bootstrap */
+
+.h3, .h4{
+  font-weight: normal!important;
+}
+.container-fluid{
+  padding: 0!important;
+}
+.borde{
+  border: 4px solid #ffffff;
+}
+.btn-dark{
+  border: 3px solid #ffffff!important;
+}
+.h6{
+  font-size: 12px!important;
+}
+.margin-b-5 {
+    margin-bottom: 9rem!important;
 }
